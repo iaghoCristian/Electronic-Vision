@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "974838391475",
+    "firebase_url": "https://electronic-vision.firebaseio.com",
+    "project_id": "electronic-vision",
+    "storage_bucket": "electronic-vision.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974838391475:android:ab67573b70372ba40b86c6",
+        "android_client_info": {
+          "package_name": "com.example.ElectronicVision"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974838391475-1q4rio1f4li10rpjvn0g0j4eu3g9h9pd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmiFJRa6u3TfrJo7Gbiw0DfowlkxwsUPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974838391475-1q4rio1f4li10rpjvn0g0j4eu3g9h9pd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
