@@ -110,6 +110,7 @@ class _Cart extends State<Cart> {
 
   @override
   Widget build(BuildContext context) {
+    double screenSize = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -127,21 +128,28 @@ class _Cart extends State<Cart> {
                           children: <Widget>[
                             Row(children: <Widget>[
                               Container(
-                                  margin: EdgeInsets.only(left: 10, top: 20),
-                                  alignment: Alignment.centerLeft,
-                                  child: Text(
-                                    "Nome do Jogo: ",
-                                    style: TextStyle(
-                                        color: color,
-                                        fontSize: sizeParagraph,
-                                        fontWeight: FontWeight.bold),
+                                  width: screenSize * 0.8,
+                                  child: Row(
+                                    children: <Widget>[
+                                      Container(
+                                          margin: EdgeInsets.only(
+                                              left: 10, top: 20),
+                                          alignment: Alignment.centerLeft,
+                                          child: Text(
+                                            "Nome do Jogo: ",
+                                            style: TextStyle(
+                                                color: color,
+                                                fontSize: sizeParagraph,
+                                                fontWeight: FontWeight.bold),
+                                          )),
+                                      Container(
+                                        margin: EdgeInsets.only(top: 20),
+                                        child: Text(game.name,
+                                            style: TextStyle(
+                                                fontSize: sizeParagraph)),
+                                      ),
+                                    ],
                                   )),
-                              Container(
-                                width: 200,
-                                margin: EdgeInsets.only(top: 20),
-                                child: Text(game.name,
-                                    style: TextStyle(fontSize: sizeParagraph)),
-                              ),
                               Container(
                                 margin: EdgeInsets.only(right: 10),
                                 height: 30,
